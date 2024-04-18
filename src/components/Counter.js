@@ -19,9 +19,7 @@ function Counter() {
   
   return (
     <div>
-        <button onClick={() => setCount(count + 1)}>+</button>
-        <h1>Counter {count}</h1>
-        <button>-</button>
+        Counter {count} <button onClick={() => setCount(count + 1)}>+</button>
     </div>
   )
 }
