@@ -13,6 +13,12 @@ function HookMouse() {
     useEffect(() => {
         console.log('useEffect called');
         window.addEventListener('mousemove', logMousePosition);
+
+        // cleanup function 
+        return () => {
+            console.log('Component unmounting code logged.');
+            window.removeEventListener('mousemove', logMousePosition);
+        }
     }, []) // empty array means it will run only once after the initial render. sure enough we have mimic the componentDidMount lifecycle method.
 
     return (
