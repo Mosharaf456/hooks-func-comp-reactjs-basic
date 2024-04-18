@@ -11,6 +11,12 @@ import IntervalHookCounter from './components/CounterUseEffect/IntervalHookCount
 import DataFetching from './components/FetchData/DataFetching';
 import DataFetchingTwo from './components/FetchData/DataFecthcingTwo';
 import TriggerEffectBtnClick from './components/FetchData/TriggerEffectBtnClick';
+import ComponentC from './components/HookContextApi/ComponentC';
+import React from 'react';
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
 
 function App() {
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
@@ -70,7 +76,14 @@ function App() {
       {/* <br /> */}
       {/* <DataFetching /> */}
       {/* <DataFetchingTwo /> */}
-      <TriggerEffectBtnClick />
+      {/* <TriggerEffectBtnClick /> */}
+
+      {/* Context API */}
+      <UserContext.Provider value={'Mosharaf Hossain'}>
+        <ChannelContext.Provider value={'BTL'}>
+            <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
 
     </div>
   );
