@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Counter from './components/Counter';
 import IncrementDecrement from './components/counter/IncrementDecrement';
+import HookCounterObject from './components/counter/HookCounterObject';
 
 function App() {
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
@@ -35,6 +36,9 @@ function App() {
       <Counter />
       <br />
       <IncrementDecrement />
+      <br />
+      <br />
+      <HookCounterObject  />
 
     </div>
   );
