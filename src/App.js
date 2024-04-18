@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Counter from './components/Counter';
+import Counter from './components/counter/Counter';
 import IncrementDecrement from './components/counter/IncrementDecrement';
 import HookCounterObject from './components/counter/HookCounterObject';
 import HookCounterArray from './components/counter/HookCounterArray';
