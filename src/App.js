@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Counter from './components/counter/Counter';
-import IncrementDecrement from './components/counter/IncrementDecrement';
-import HookCounterObject from './components/counter/HookCounterObject';
-import HookCounterArray from './components/counter/HookCounterArray';
+import Counter from './components/Counter/Counter';
+import IncrementDecrement from './components/Counter/IncrementDecrement';
+import HookCounterObject from './components/Counter/HookCounterObject';
+import HookCounterArray from './components/Counter/HookCounterArray';
 
 function App() {
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
