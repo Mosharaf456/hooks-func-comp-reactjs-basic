@@ -7,6 +7,7 @@ import HookCounterArray from './components/Counter/HookCounterArray';
 import CounterEffectOne from './components/CounterUseEffect/CounterEffectOne';
 import HookMouse from './components/CounterUseEffect/HookMouse';
 import MouseContainer from './components/CounterUseEffect/MouseContainer';
+import IntervalHookCounter from './components/CounterUseEffect/IntervalHookCounter';
 
 function App() {
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
@@ -57,8 +58,11 @@ function App() {
       {/* <HookMouse /> */}
 
       {/* componentWillUnmount */}
+      {/* <br />
+      <MouseContainer /> */}
+      
       <br />
-      <MouseContainer />
+      <IntervalHookCounter someProp='Hello'/>
       
 
     </div>
