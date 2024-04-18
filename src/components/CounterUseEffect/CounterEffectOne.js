@@ -17,7 +17,7 @@ function CounterEffectOne() {
         console.log('useEffect - Updating document title')  ;
         document.title = `You clicked ${count} times`
     }, [count]) 
-    // conditionally run an effect specified in the second argument of useEffect.
+    // conditionally run an effect specified in the second argument of useEffect that is dependency list.
     // If the values inside the array are changed then only the effect will run.
     // If the value is not changed then the effect will not run.
 
