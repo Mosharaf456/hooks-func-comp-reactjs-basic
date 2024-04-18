@@ -12,12 +12,12 @@ function IntervalHookCounter({someProp}) {
             console.log(someProp)
         }
         doSomething();
-        
+
         const interval = setInterval(tick, 1000);
         return () => {
             clearInterval(interval);
         }
-    }, [someProp]);
+    }, [someProp]); // useEffect dependency correction
 
     return (
         <div>
