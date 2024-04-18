@@ -4,6 +4,7 @@ import Counter from './components/Counter/Counter';
 import IncrementDecrement from './components/Counter/IncrementDecrement';
 import HookCounterObject from './components/Counter/HookCounterObject';
 import HookCounterArray from './components/Counter/HookCounterArray';
+import CounterEffectOne from './components/CounterUseEffect/CounterEffectOne';
 
 function App() {
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
@@ -34,7 +35,8 @@ function App() {
     <div className="App">
       <h1>React App for Hooks Learn</h1>
 
-      <Counter />
+      {/* useState */}
+      {/* <Counter />
       <br />
       <IncrementDecrement />
       <br />
@@ -42,7 +44,12 @@ function App() {
       <HookCounterObject  />
       <br />
       <br />
-      <HookCounterArray />
+      <HookCounterArray /> */}
+
+      {/* useEffect */}
+      <br />
+      <br />
+      <CounterEffectOne />
     </div>
   );
 }
