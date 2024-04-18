@@ -11,7 +11,7 @@ function ComponentE() {
 
   return (
     <>
-      <div>Component E</div>
+      <div>Component Context API introduce by useContext hook</div>
       <div>User context value {user} -  channel context value {channel}</div>
     </>
   )
