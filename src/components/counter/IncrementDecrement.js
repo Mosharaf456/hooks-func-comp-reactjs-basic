@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 
+// call back function has access of previous state value which we use to calculate the new state value.
 function IncrementDecrement() {
     const initialCount = 0;
     const [count, setCount] = useState(initialCount);
