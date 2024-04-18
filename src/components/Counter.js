@@ -19,6 +19,7 @@ function Counter() {
   
   return (
     <div>
+      {/* setCount is not a proper way to increment but for basic it is kept, another module is it updated named as IncrementDecrement  */}
         Counter {count} <button onClick={() => setCount(count + 1)}>+</button>
     </div>
   )
