@@ -10,6 +10,7 @@ import MouseContainer from './components/CounterUseEffect/MouseContainer';
 import IntervalHookCounter from './components/CounterUseEffect/IntervalHookCounter';
 import DataFetching from './components/FetchData/DataFetching';
 import DataFetchingTwo from './components/FetchData/DataFecthcingTwo';
+import TriggerEffectBtnClick from './components/FetchData/TriggerEffectBtnClick';
 
 function App() {
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
@@ -68,7 +69,9 @@ function App() {
       
       {/* <br /> */}
       {/* <DataFetching /> */}
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+      <TriggerEffectBtnClick />
+
     </div>
   );
 }
