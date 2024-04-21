@@ -19,6 +19,7 @@ import CounterThree from './components/HookUseReducer/CounterThree';
 import AComponentReduce from './components/HookUseReducer/AComponentReduce';
 import BComponentReduce from './components/HookUseReducer/BComponentReduce';
 import CComponentReduce from './components/HookUseReducer/CComponentReduce';
+import DataFetchingOne from './components/HookUseReducer/DataFetching/DataFetchingOne';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -117,14 +118,19 @@ function App() {
 
       {/* Global state mangement with reduce */}
       
-      <CountContext.Provider value={{ countState: count , countDispatch: dispatch }}>
+      {/* <CountContext.Provider value={{ countState: count , countDispatch: dispatch }}>
         <h1>Count value shared across the component : {count}</h1>
         <AComponentReduce />
         <br />
         <BComponentReduce />
         <br />
         <CComponentReduce />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+
+      <br />
+      {/* Data Fecthing */}
+      <DataFetchingOne />
+      
 
     </div>
   );
