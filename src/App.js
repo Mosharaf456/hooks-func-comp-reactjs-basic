@@ -15,6 +15,7 @@ import ComponentC from './components/HookContextApi/ComponentC';
 import React from 'react';
 import Counter1 from './components/HookUseReducer/Counter1';
 import CounterTwo from './components/HookUseReducer/CounterTwo';
+import CounterThree from './components/HookUseReducer/CounterThree';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -91,7 +92,8 @@ function App() {
       <br />
       <br />
       {/* <Counter1 /> */}
-      <CounterTwo />
+      {/* <CounterTwo /> */}
+      <CounterThree />
 
     </div>
   );
