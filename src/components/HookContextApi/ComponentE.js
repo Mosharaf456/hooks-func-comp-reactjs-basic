@@ -3,6 +3,7 @@ import { UserContext, ChannelContext } from '../../App'
 
 /*
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+useContext hook is used to consume the context value simpler.
 */
 
 function ComponentE() {
