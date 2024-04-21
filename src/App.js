@@ -153,6 +153,12 @@ function App() {
       <br />
       <HookTimer />
 
+      {/* Rarely use of hooks are - useImperativeHandle, useLayout effect , useDebug value */}
+
+      {/* Custom hooks */}
+      {/* Custom hooks are functions whose names start with “use” and may call other hooks. */}
+
+      
 
     </div>
   );
