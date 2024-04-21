@@ -22,6 +22,8 @@ import CComponentReduce from './components/HookUseReducer/CComponentReduce';
 import DataFetchingOne from './components/HookUseReducer/DataFetching/DataFetchingOne';
 import DatafetchingTwo from './components/HookUseReducer/DataFetching/DatafetchingTwo';
 
+import ParentComponent from './components/PerformanceCallback/ParentComponent';
+
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -132,8 +134,10 @@ function App() {
       {/* Data Fecthing */}
       {/* <DataFetchingOne /> */}
       {/* Data Fecthing using useReducer */}
-      <DatafetchingTwo />
+      {/* <DatafetchingTwo /> */}
 
+      {/* useCallback hook */}
+      <ParentComponent />
     </div>
   );
 }
