@@ -156,9 +156,12 @@ function App() {
       {/* Rarely use of hooks are - useImperativeHandle, useLayout effect , useDebug value */}
 
       {/* Custom hooks */}
-      {/* Custom hooks are functions whose names start with “use” and may call other hooks. */}
-
+      {/* Custom hooks are basically a JS functions whose names start with “use” and may call other hooks. */}
+      {/* A Custom hook can also call other Hooks if required */}
+      {/* Why? Custom hooks to share logic between two or more ccomponents. Alternative of HOC and Render props pattern */}
       
+
+
 
     </div>
   );
