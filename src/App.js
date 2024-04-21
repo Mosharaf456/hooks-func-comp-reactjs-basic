@@ -14,6 +14,7 @@ import TriggerEffectBtnClick from './components/FetchData/TriggerEffectBtnClick'
 import ComponentC from './components/HookContextApi/ComponentC';
 import React from 'react';
 import Counter1 from './components/HookUseReducer/Counter1';
+import CounterTwo from './components/HookUseReducer/CounterTwo';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -80,16 +81,17 @@ function App() {
       {/* <TriggerEffectBtnClick /> */}
 
       {/* Context API */}
-      <UserContext.Provider value={'Mosharaf Hossain'}>
+      {/* <UserContext.Provider value={'Mosharaf Hossain'}>
         <ChannelContext.Provider value={'BTL'}>
             <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
       {/* useReducer */}
       <br />
       <br />
-      <Counter1 />
+      {/* <Counter1 /> */}
+      <CounterTwo />
 
     </div>
   );
