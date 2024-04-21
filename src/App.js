@@ -30,6 +30,7 @@ import DocTitleCustomHookOne from './components/DocTitleCustomHook/DocTitleCusto
 import DocTitleCustomHookTwo from './components/DocTitleCustomHook/DocTitleCustomHookTwo';
 import CounterOneCustomHook from './components/DocTitleCustomHook/CounterOneCustomHook';
 import CounterTwoCustomHook from './components/DocTitleCustomHook/CounterTwoCustomHook';
+import UserForm from './components/DocTitleCustomHook/UserForm';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -168,6 +169,9 @@ function App() {
       <DocTitleCustomHookTwo />
       <CounterOneCustomHook />
       <CounterTwoCustomHook />
+      <br />
+      {/* USEINPUT CUSTOM HOOK  */}
+      <UserForm />
 
 
     </div>
