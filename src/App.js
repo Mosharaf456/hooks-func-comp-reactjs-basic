@@ -20,6 +20,7 @@ import AComponentReduce from './components/HookUseReducer/AComponentReduce';
 import BComponentReduce from './components/HookUseReducer/BComponentReduce';
 import CComponentReduce from './components/HookUseReducer/CComponentReduce';
 import DataFetchingOne from './components/HookUseReducer/DataFetching/DataFetchingOne';
+import DatafetchingTwo from './components/HookUseReducer/DataFetching/DatafetchingTwo';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -129,8 +130,9 @@ function App() {
 
       <br />
       {/* Data Fecthing */}
-      <DataFetchingOne />
-      
+      {/* <DataFetchingOne /> */}
+      {/* Data Fecthing using useReducer */}
+      <DatafetchingTwo />
 
     </div>
   );
