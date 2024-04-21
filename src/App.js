@@ -13,6 +13,7 @@ import DataFetchingTwo from './components/FetchData/DataFecthcingTwo';
 import TriggerEffectBtnClick from './components/FetchData/TriggerEffectBtnClick';
 import ComponentC from './components/HookContextApi/ComponentC';
 import React from 'react';
+import Counter1 from './components/HookUseReducer/Counter1';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -84,6 +85,11 @@ function App() {
             <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider>
+
+      {/* useReducer */}
+      <br />
+      <br />
+      <Counter1 />
 
     </div>
   );
