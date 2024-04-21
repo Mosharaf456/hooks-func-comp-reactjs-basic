@@ -26,6 +26,8 @@ import ParentComponent from './components/PerformanceCallback/ParentComponent';
 import CounterMemoHook from './components/PerformanceCallback/CounterMemoHook';
 import ComponentUseRef from './components/ComponentUseRef/ComponentUseRef';
 import HookTimer from './components/ComponentUseRef/HookTimer';
+import DocTitleCustomHookOne from './components/DocTitleCustomHook/DocTitleCustomHookOne';
+import DocTitleCustomHookTwo from './components/DocTitleCustomHook/DocTitleCustomHookTwo';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -140,7 +142,7 @@ function App() {
       {/* <DatafetchingTwo /> */}
 
       {/* useCallback hook */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
 
       {/* useMemo hook */}
       <br />
@@ -149,9 +151,9 @@ function App() {
       <br />
 
       {/* useRef */}
-      <ComponentUseRef />
+      {/* <ComponentUseRef /> */}
       <br />
-      <HookTimer />
+      {/* <HookTimer /> */}
 
       {/* Rarely use of hooks are - useImperativeHandle, useLayout effect , useDebug value */}
 
@@ -159,7 +161,9 @@ function App() {
       {/* Custom hooks are basically a JS functions whose names start with “use” and may call other hooks. */}
       {/* A Custom hook can also call other Hooks if required */}
       {/* Why? Custom hooks to share logic between two or more ccomponents. Alternative of HOC and Render props pattern */}
-      
+      <DocTitleCustomHookOne  />
+      <br />
+      <DocTitleCustomHookTwo />
 
 
 
