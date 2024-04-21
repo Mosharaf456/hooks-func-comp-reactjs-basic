@@ -11,6 +11,9 @@ function useInput(initialValue) {
             setValue(e.target.value)
         }
     }
+    console.log('value: ', value);
+    console.log('bind: ', bind);
+    console.log('reset: ', reset);
     return [value, bind, reset];
 }
 
