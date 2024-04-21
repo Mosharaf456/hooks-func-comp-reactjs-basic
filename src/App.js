@@ -23,6 +23,7 @@ import DataFetchingOne from './components/HookUseReducer/DataFetching/DataFetchi
 import DatafetchingTwo from './components/HookUseReducer/DataFetching/DatafetchingTwo';
 
 import ParentComponent from './components/PerformanceCallback/ParentComponent';
+import CounterMemoHook from './components/PerformanceCallback/CounterMemoHook';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -138,6 +139,11 @@ function App() {
 
       {/* useCallback hook */}
       <ParentComponent />
+
+      {/* useMemo hook */}
+      <br />
+      <br />
+      <CounterMemoHook />
     </div>
   );
 }
