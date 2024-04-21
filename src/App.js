@@ -28,6 +28,8 @@ import ComponentUseRef from './components/ComponentUseRef/ComponentUseRef';
 import HookTimer from './components/ComponentUseRef/HookTimer';
 import DocTitleCustomHookOne from './components/DocTitleCustomHook/DocTitleCustomHookOne';
 import DocTitleCustomHookTwo from './components/DocTitleCustomHook/DocTitleCustomHookTwo';
+import CounterOneCustomHook from './components/DocTitleCustomHook/CounterOneCustomHook';
+import CounterTwoCustomHook from './components/DocTitleCustomHook/CounterTwoCustomHook';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -164,7 +166,8 @@ function App() {
       <DocTitleCustomHookOne  />
       <br />
       <DocTitleCustomHookTwo />
-
+      <CounterOneCustomHook />
+      <CounterTwoCustomHook />
 
 
     </div>
