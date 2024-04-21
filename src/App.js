@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React, { useReducer } from 'react';
 import Counter from './components/Counter/Counter';
 import IncrementDecrement from './components/Counter/IncrementDecrement';
 import HookCounterObject from './components/Counter/HookCounterObject';
@@ -12,16 +13,35 @@ import DataFetching from './components/FetchData/DataFetching';
 import DataFetchingTwo from './components/FetchData/DataFecthcingTwo';
 import TriggerEffectBtnClick from './components/FetchData/TriggerEffectBtnClick';
 import ComponentC from './components/HookContextApi/ComponentC';
-import React from 'react';
 import Counter1 from './components/HookUseReducer/Counter1';
 import CounterTwo from './components/HookUseReducer/CounterTwo';
 import CounterThree from './components/HookUseReducer/CounterThree';
+import AComponentReduce from './components/HookUseReducer/AComponentReduce';
+import BComponentReduce from './components/HookUseReducer/BComponentReduce';
+import CComponentReduce from './components/HookUseReducer/CComponentReduce';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
+export const CountContext = React.createContext();
+
+const initialState = 0;
+const reducer = (state, action) => {
+    switch(action) {
+        case 'increment':
+            return state + 1;
+        case 'decrement':
+            return state - 1;
+        case 'reset':
+            return initialState;
+        default:
+            return state;
+    }
+}
 
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState);
+
   // Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
   // Hooks are functions that let you “hook into” React state and lifecycle features from function components.
   // Hooks don’t work inside classes — they let you use React without classes.
@@ -93,7 +113,18 @@ function App() {
       <br />
       {/* <Counter1 /> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+
+      {/* Global state mangement with reduce */}
+      
+      <CountContext.Provider value={{ countState: count , countDispatch: dispatch }}>
+        <h1>Count : {count}</h1>
+        <AComponentReduce />
+        <br />
+        <BComponentReduce />
+        <br />
+        <CComponentReduce />
+      </CountContext.Provider>
 
     </div>
   );
