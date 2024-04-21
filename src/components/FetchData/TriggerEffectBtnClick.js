@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 
-// var i = 0;
 function TriggerEffectBtnClick() {
-    // i++; // i is incremented every time the component is rendered just for log purpose.
     const [post, setPost] = useState({});
     const [id, setId] = useState(1);
     const [idFromButtonClick, setIdFromButtonClick] = useState(1);
@@ -16,7 +14,6 @@ function TriggerEffectBtnClick() {
         axios
             .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
             .then(res => {
-                // console.log('**' , i);
                 console.log(res);    
                 setPost(res.data);
             })
