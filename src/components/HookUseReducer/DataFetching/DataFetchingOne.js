@@ -33,6 +33,7 @@ function DataFetchingOne() {
         })
         .catch(error => {
             setLoading(false);
+            setPost({});
             setError('Something went wrong!');
         })
     }, [])
