@@ -1,5 +1,8 @@
 import React, {useReducer} from 'react'
-
+/*
+multiple state variables that have same state transitions , it is good to use multiple  useReducers making use same reducers
+functions which optimized
+*/
 const initialState = 0;
 const reducer = (state, action) => {
     switch(action) {
