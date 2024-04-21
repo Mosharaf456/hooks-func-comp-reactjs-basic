@@ -118,7 +118,7 @@ function App() {
       {/* Global state mangement with reduce */}
       
       <CountContext.Provider value={{ countState: count , countDispatch: dispatch }}>
-        <h1>Count : {count}</h1>
+        <h1>Count value shared across the component : {count}</h1>
         <AComponentReduce />
         <br />
         <BComponentReduce />
