@@ -96,7 +96,7 @@ function App() {
       {/* useEffect */}
       {/* <br /> */}
       {/* <br /> */}
-      {/* <CounterEffectOne /> */}
+      <CounterEffectOne /> 
 
       {/* <br /> */}
       {/* <HookMouse /> */}
@@ -164,14 +164,14 @@ function App() {
       {/* Custom hooks are basically a JS functions whose names start with “use” and may call other hooks. */}
       {/* A Custom hook can also call other Hooks if required */}
       {/* Why? Custom hooks to share logic between two or more ccomponents. Alternative of HOC and Render props pattern */}
-      <DocTitleCustomHookOne  />
+      {/* <DocTitleCustomHookOne  /> */}
       <br />
-      <DocTitleCustomHookTwo />
-      <CounterOneCustomHook />
-      <CounterTwoCustomHook />
+      {/* <DocTitleCustomHookTwo /> */}
+      {/* <CounterOneCustomHook /> */}
+      {/* <CounterTwoCustomHook /> */}
       <br />
       {/* USEINPUT CUSTOM HOOK  */}
-      <UserForm />
+      {/* <UserForm /> */}
 
 
     </div>
