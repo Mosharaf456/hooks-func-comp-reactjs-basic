@@ -12,10 +12,10 @@ import React from 'react'
  * If not not changes then React will not update the real DOM. Discrad the result. 
  * Commit phase - Real DOM is updated.
  */
-function UseStateComment() {
+function UseStateDocument1() {
     return (
-        <div>UseStateComment</div>
+        <div>UseStateDocument1</div>
     )
 }
 
-export default UseStateComment
+export default UseStateDocument1
