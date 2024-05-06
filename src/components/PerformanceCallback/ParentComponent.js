@@ -41,6 +41,7 @@ function ParentComponent() {
 
     return (
         <div>
+            {/* here Title, Count, Button all are child component , not jsx */}
             <Title />
             <Count text='Age' count={age}/>
             <Button handleClick={incrementAge}>Increment Age</Button>
