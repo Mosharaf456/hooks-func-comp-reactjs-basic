@@ -50,7 +50,38 @@ const reducer = (state, action) => {
             return state;
     }
 }
+/* 
+React focuses on User Interface (UI). Respond user interaction and display or render the information on the UI.
+Web default programming language is JavaScript. React is a open source JavaScript library.It is built on pure or Vanilla JavaScript.
+React is a declarative, efficient for building user interfaces.
+React comes in 2013.
+Before we use JS,jquery to handle UI,user interaction.
+We didn,t reuse the code much like HTML, we write the same code again and again to built UI Ex. counters UI.
+To mange by using Vanilla JS, we use DOM manipulation, event handling, data fetching, data manipulation, etc. 
+is quite complex for large scale applications.
+It is resolved by using React library. Reuse the code, easy to maintain, easy to test, easy to understand, easy to debug.
 
+Facebook Software Engineer Jordan Walke created React prototype called FaxJS in 2011.FN newsfeed and also instagram uses this in 2012.
+XHP-JS --php html component framework for PHP.
+In 2013 FaxJS was open sourced  renmaed as React.
+NETFLEX, INSTAGRAM, WHATSAPP, FACEBOOK, AIRBNB, UBER, NETFLIX, TWITTER, PAYPAL, DROPBOX, BBC, CASHAPP, etc uses React.
+
+Transpiler: Babel
+-- JSX syntax is not understood by the browser. It is a syntax extension for JavaScript.
+-- Babel is a transpiler that converts JSX code into JavaScript code that the browser can understand.
+-- Babel is a JavaScript compiler that converts ECMAScript 2015+ code into a backwards 
+compatible version of JavaScript in current and older browsers or environments.
+-- Babel can convert JSX into JavaScript code that can be run in the browser.
+
+Variable interpolation: { variableValue }
+
+Component resuse with self contain functionality is the main benefits of React JUST CALLING THE COMPONENT NAME. <ComponentName /> or ComponentName() 
+
+
+
+
+
+*/
 function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
 
@@ -96,7 +127,7 @@ function App() {
       {/* useEffect */}
       {/* <br /> */}
       {/* <br /> */}
-      <CounterEffectOne /> 
+      {/* <CounterEffectOne />  */}
 
       {/* <br /> */}
       {/* <HookMouse /> */}
@@ -145,7 +176,7 @@ function App() {
       {/* <DatafetchingTwo /> */}
 
       {/* useCallback hook */}
-      {/* <ParentComponent /> */}
+      <ParentComponent />
 
       {/* useMemo hook */}
       <br />
