@@ -76,9 +76,10 @@ compatible version of JavaScript in current and older browsers or environments.
 Variable interpolation: { variableValue }
 
 Component resuse with self contain functionality is the main benefits of React JUST CALLING THE COMPONENT NAME. <ComponentName /> or ComponentName() 
-
-
-
+Performance better, cross platform app, community large. 
+React works only on the UI side of the application. 
+We will not change directly DOM by using jquery , very bad practice.
+React manipuilate the DOM by using Virtual DOM.
 
 
 */
